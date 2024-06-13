@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Rubik", sans-serif;
-  background-color: hsl(226, 43%, 10%);
-}
 /* ### Primary
 
 - Blue: hsl(246, 80%, 60%)
@@ -28,9 +21,27 @@ body {
 - Desaturated blue: hsl(235, 45%, 61%)
 - Pale Blue hsl(236, 100%, 87%)
  */
+body {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #0d1323;
+  color: white;
+  padding: 80px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+main{
+  height: 100vh;
+  width: 100%;
+}
 /* footer */
-
 .attribution {
   position: absolute;
   bottom: 0;
