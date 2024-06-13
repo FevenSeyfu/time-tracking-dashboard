@@ -3,7 +3,6 @@ import UserCard from "./components/UserCard";
 import ActivityCard from "./components/ActivityCard";
 import Footer from "./components/Footer";
 import { ActivityContext } from "./context/ActivityContext";
-// import Data from './assets/data.json'
 
 function App() {
   const [activityDuration, setActivityDuration] = useState("daily");

@@ -1,0 +1,59 @@
+.user-card {
+  width: 327px;
+  height: 200px;
+  background-color: #1d204b;
+  border-radius: 12px;
+}
+.user-info {
+  background-color: #5746ea;
+  height: 132px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 12px;
+  color: #e2defd;
+}
+.user-img {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 0 3px #fff;
+  border-radius: 50%;
+}
+
+.user-info .title {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 45px;
+}
+
+.user-info .user-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+}
+.activity-type {
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.activity-type > button {
+  background-color: #1d204b;
+  border: none;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 21px;
+  color: #6064A0;
+}
+
+.activity-type > button.active {
+    color:#b8bac9;
+}
+
+.activity-type > button:hover {
+    color: #dbdde7;
+    cursor: pointer;
+}
