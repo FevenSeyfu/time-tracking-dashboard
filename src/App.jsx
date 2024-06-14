@@ -23,7 +23,7 @@ function App() {
       <main className="container">
         <UserCard />
         {activities.map(activity => (
-          <ActivityCard key={activity.title} activity={activity} />
+          <ActivityCard key={activity.title} activity={activity} className="activities"/>
         ))}
       </main>
       <Footer />

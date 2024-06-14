@@ -1,17 +1,19 @@
-import React, { useContext } from 'react'
-import iconEllipsis from '../assets/images/icon-ellipsis.svg'
-import { ActivityContext } from '../context/ActivityContext'
+import React, { useContext } from "react";
+import iconEllipsis from "../assets/images/icon-ellipsis.svg";
+import { ActivityContext } from "../context/ActivityContext";
+import "../assets/CSS/ActivityCard.css";
+import IconEllipsis from "./IconEllipsis";
 
 const ActivityCard = ({ activity }) => {
-  const { activityDuration } = useContext(ActivityContext)
+  const { activityDuration } = useContext(ActivityContext);
 
   return (
-    <article className="activity-card">
-      <div>
+    <article className={`activity-card ${activity.title.toLowerCase()}`}>
+      <div className="activity-content">
         <section className="heading">
           <h2>{activity.title}</h2>
           <button>
-            <img src={iconEllipsis} alt="ellipsis icon" />
+            <IconEllipsis className="icon-ellipsis"/> 
           </button>
         </section>
         <section className="activity-record">
@@ -24,7 +26,7 @@ const ActivityCard = ({ activity }) => {
         </section>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default ActivityCard
+export default ActivityCard;
