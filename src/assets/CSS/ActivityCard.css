@@ -1,38 +1,43 @@
 .activity-card {
-  width: 327px;
+  width: 100%;
   height: 164px;
   border-radius: 16px;
   position: relative;
-  background-position: top -15px right 15px;
   background-repeat: no-repeat;
 }
 
 .activity-card.work {
-    background-color: #ff8b64;
-    background-image: url("src/assets/images/icon-work.svg");
+  background-position: top -15px right 15px;
+  background-color: #ff8b64;
+  background-image: url("src/assets/images/icon-work.svg");
 }
 
 .activity-card.play {
+  background-position: top -5px right 15px;
   background-color: #56c2e6;
   background-image: url("src/assets/images/icon-play.svg");
 }
 
 .activity-card.study {
+    background-position: top -5px right 15px;
   background-color: #ff5e7d;
   background-image: url("src/assets/images/icon-study.svg");
 }
 
 .activity-card.exercise {
+    background-position: top  right 15px;
   background-color: #4bcf83;
   background-image: url("src/assets/images/icon-exercise.svg");
 }
 
 .activity-card.social {
+    background-position: top -14px right 15px;
   background-color: #7235d1;
   background-image: url("src/assets/images/icon-social.svg");
 }
 
-.activity-card.self{
+.activity-card.self {
+    background-position: top -10px right 15px;
   background-color: #f1c75b;
   background-image: url("src/assets/images/icon-self-care.svg");
 }
@@ -48,7 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding: 32px;
+  padding: 32px 20px;
 }
 
 .activity-content:hover {
