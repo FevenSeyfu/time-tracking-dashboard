@@ -9,9 +9,9 @@ function App() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('data.json')
-      .then(response => response.json())
-      .then(data => setActivities(data));
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => setActivities(data));
   }, []);
 
   const updateDuration = (newDuration) => {
@@ -22,9 +22,11 @@ function App() {
     <ActivityContext.Provider value={{ activityDuration, updateDuration }}>
       <main className="container">
         <UserCard />
-        {activities.map(activity => (
-          <ActivityCard key={activity.title} activity={activity} className="activities"/>
-        ))}
+        <div className="activity-container">
+          {activities.map((activity) => (
+            <ActivityCard activity={activity} key={activity.id} />
+          ))}
+        </div>
       </main>
       <Footer />
     </ActivityContext.Provider>

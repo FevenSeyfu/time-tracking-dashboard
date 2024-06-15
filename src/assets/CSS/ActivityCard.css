@@ -1,5 +1,5 @@
 .activity-card {
-  width: 100%;
+  width: 327px;
   height: 164px;
   border-radius: 16px;
   position: relative;
@@ -107,4 +107,10 @@
   font-size: 16px;
   line-height: 18px;
   color: #9398d9;
+}
+@media (min-width: 768px){
+    .activity-card{
+        width: auto;
+        height: auto;
+    }
 }

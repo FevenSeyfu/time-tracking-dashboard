@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="attribution">
-      Challenge by
+      Challenge by 
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        Frontend Mentor
+      {" "} Frontend Mentor
       </a>
-      . Coded by <a href="https://github.com/fevenseyfu">Feven Seyfu</a>.
+      . Coded by <a href="https://github.com/fevenseyfu">{" "} Feven Seyfu</a>.
     </footer>
   );
 };
