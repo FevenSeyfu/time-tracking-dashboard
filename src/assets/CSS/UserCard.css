@@ -1,7 +1,7 @@
 .user-card {
   width: 327px;
   height: 200px;
-  background-color: #1D1F4B;
+  background-color: #1d1f4b;
   border-radius: 12px;
 }
 .user-info {
@@ -46,14 +46,51 @@
   font-weight: 400;
   font-size: 17.5px;
   line-height: 21px;
-  color: #6064A0;
+  color: #6064a0;
 }
 
 .activity-type > button.active {
-    color:#b8bac9;
+  color: #b8bac9;
 }
 
 .activity-type > button:hover {
-    color: #dbdde7;
-    cursor: pointer;
+  color: #dbdde7;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .user-card {
+    width: 255px;
+    height: 520px;
+  }
+  .user-info {
+    height: 352px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 35px;
+    padding: 32px;
+  }
+
+  .user-info .title {
+    font-weight: 400;
+    font-size: 14.5px;
+    line-height: 18px;
+    color: #9f96fd;
+  }
+
+  .user-info .user-name {
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
+    color: #e2defd;
+    margin-top: 10px;
+  }
+
+  .activity-type{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 17px;
+  }
 }

@@ -59,9 +59,9 @@ main {
   }
   .activity-container {
     width: 822px;
+    height: 520px;
     gap: 24px;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(255px, auto);
   }
 
   .attribution {
