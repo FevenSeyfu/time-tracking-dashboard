@@ -6,7 +6,7 @@ import { ActivityContext } from "./context/ActivityContext";
 import data from "../data.json"
 
 function App() {
-  const [activityDuration, setActivityDuration] = useState("daily");
+  const [activityDuration, setActivityDuration] = useState("weekly");
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {

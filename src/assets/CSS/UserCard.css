@@ -29,7 +29,7 @@
 
 .user-info .user-name {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 45px;
 }
@@ -50,11 +50,11 @@
 }
 
 .activity-type > button.active {
-  color: #b8bac9;
+  color: #dfdfdf;
 }
 
 .activity-type > button:hover {
-  color: #dbdde7;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -69,11 +69,17 @@
     align-items: start;
     justify-content: start;
     gap: 35px;
-    padding: 32px;
+    padding: 42px 32px;
+  }
+
+  .user-info .user-img {
+    width: 72px;
+    height: 72px;
+    box-shadow: 0 0 0 3px #fff;
   }
 
   .user-info .title {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14.5px;
     line-height: 18px;
     color: #9f96fd;
